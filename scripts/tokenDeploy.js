@@ -1,4 +1,3 @@
-//MyToken deployed to 0x7137eEdeE5e85ccfc12462CEDf88D56B0360DfD0
 
 const { ethers } = require("hardhat");
 
@@ -21,7 +20,7 @@ async function main() {
     
     // Deploy contract
     const MyToken = await ethers.getContractFactory("MyToken");
-    const token = await MyToken.deploy("SimplePanas", "SP", amount);
+    const token = await MyToken.deploy("Kalchaqui", "KL", amount);
     
     // Wait for contract to be deployed
     await token.waitForDeployment();
